@@ -1,0 +1,62 @@
+ /* grid c6 */
+.grid-c6 .grid-item {
+  background-color: var(--clr-graphite);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.grid-c6 .grid-item .avatar {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.grid-c6 .grid-item-top-l {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.grid-c6 .grid-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.grid-c6 .grid-item-top-r {
+  font-weight: 600;
+}
+
+.grid-c6 .grid-item-badges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-c6 .grid-item-badge {
+  color: #8a8587;
+  background-color: var(--clr-jet);
+  display: inline-block;
+  border-radius: 16px;
+  padding: 4px 6px;
+  margin: 5px 6px 0 0;
+  font-size: 14px;
+}
+
+.grid-c6 .grid-item-progress {
+  background-color: var(--clr-primary-light);
+  height: 10px;
+  border-radius: 100vh;
+  margin-top: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.grid-c6 .grid-item-fill {
+  height: 100%;
+  background-color: var(--clr-pumpkin);
+  border-radius: 100vh;
+  transition: width 0.4s ease;
+}

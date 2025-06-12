@@ -1,0 +1,81 @@
+  /* Conteneur principal */
+.grid-c7-content {
+  margin-top: -42px;
+  margin-bottom: -128px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Barre de progression */
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -46px;
+}
+
+.progress-bar .percent {
+  position: relative;
+}
+
+.progress-bar svg {
+  width: 210px;
+  height: 210px;
+  transform: rotate(-90deg);
+}
+
+/* Cercle de fond */
+.progress-bg {
+  fill: none;
+  stroke: var(--clr-jet, #333);
+  stroke-width: 20;
+  stroke-linecap: round;
+}
+
+/* Cercle de progression */
+.progress-fill {
+  fill: none;
+  stroke: var(--clr-pumpkin, orange);
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke-dasharray: 314; /* 2 * π * 50 (r=50) */
+  stroke-dashoffset: calc(314 - (314 * var(--percent)) / 100);
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+/* Texte du pourcentage */
+.progress-bar .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white, #fff);
+}
+
+.progress-bar .number h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.progress-bar .number h3 span {
+  font-size: 14px;
+}
+
+/* Liste des données */
+.data-list {
+  margin-left: -20px;
+  list-style: none;
+  padding: 0;
+}
+
+.data-item {
+  margin-bottom: 20px;
+  color: var(--clr-silver-v1, #aaa);
+}
+
+.data-item-value {
+  margin-top: 8px;
+  font-weight: 600;
+  display: block;
+}

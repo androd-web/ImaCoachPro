@@ -1,0 +1,70 @@
+   /* grid c3 */
+.grid-c3 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.grid-c3-content {
+  flex: 1;
+  height: 100%;
+}
+.grid-chart {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: stretch;
+  height: 100%;
+  gap: 8px;
+}
+.chart-vert-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 28px;
+  color: var(--clr-silver-v1);
+  font-size: 12px;
+  user-select: none;
+}
+.grid-chart-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.grid-chart-bar .bar-wrapper {
+  flex: 1;
+  width: 32px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: var(--clr-primary-light);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* pour aligner les barres en bas */
+}
+.grid-chart-bar .bar-item1 {
+  width: 100%;
+  background-color: var(--clr-pumpkin);
+  border-radius: 10px 10px 0 0;
+  transition: height 0.3s ease;
+}
+.grid-chart-bar .bar-item2 {
+  width: 100%;
+  background-color: var(--clr-peach);
+  border-radius: 10px 10px 0 0;
+  transition: height 0.3s ease;
+  margin-top: 2px; /* espace entre les deux barres */
+}
+.grid-chart-bar .grid-hortz-value {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--clr-white);
+}
+
+/* Adaptation responsive */
+@media screen and (max-width: 992px) {
+  .grid-c3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 240px;
+  }
+}

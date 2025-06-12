@@ -1,0 +1,29 @@
+/* cards-hover.css */
+
+/* Appliquer l'effet à toutes les cartes dans la section */
+.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Animation au survol */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Légère animation du bouton au survol */
+.card .btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn:hover {
+  transform: scale(1.05);
+  background-color: #0056b3; /* couleur plus foncée au survol */
+}
+
+/* Animation de l'icône SVG au survol */
+.card:hover svg {
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+  color: #0d6efd;
+}
